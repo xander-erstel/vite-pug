@@ -4,7 +4,15 @@ import pugPlugin from 'vite-plugin-pug'
 const {resolve} = require('path')
 
 export default defineConfig({
-    plugins: [pugPlugin(undefined, {pagesUrl: './pages/'})],
+    plugins: [
+        pugPlugin(
+            {
+                pretty: true,
+            },
+            {
+                pagesUrl: './pages/'
+            })
+    ],
 
     server: {port: 9001},
     optimizeDeps: {
@@ -12,6 +20,7 @@ export default defineConfig({
     },
 
     build: {
+        minify: false,
         rollupOptions: {
             input: {
                 // need a better way to template
