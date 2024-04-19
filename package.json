@@ -9,6 +9,7 @@
   "dependencies": {
     "jquery": "^3.7.1",
     "sass": "^1.75.0",
+    "swiper": "^11.1.1",
     "vite": "^5.2.9",
     "vite-plugin-pug": "^0.3.2"
   }
