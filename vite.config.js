@@ -10,7 +10,7 @@ export default defineConfig({
                 pretty: true,
             },
             {
-                pagesUrl: './pages/'
+                /*pagesUrl: './pages/'*/
             })
     ],
 
@@ -25,8 +25,8 @@ export default defineConfig({
             input: {
                 // need a better way to template
                 main: resolve(__dirname, 'index.html'),
-                page1: resolve(__dirname, 'pages/page1.html'),
-                page2: resolve(__dirname, 'pages/page2.html'),
+                page1: resolve(__dirname, 'page1.html'),
+                page2: resolve(__dirname, 'page2.html'),
             },
         },
     },
